@@ -1,0 +1,15 @@
+h1 {
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+    background-color: blue;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    margin: 0.25rem 0 0.25rem 2rem;
+}
+a:hover {
+    background-color: rgb(82, 82, 207);
+}
