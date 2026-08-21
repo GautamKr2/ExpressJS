@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in ejs</title>
+</head>
+<body>
+    <h1> Loops in ejs </h1>
+    <ol>
+        <% for(let i=0; i<user.length; i++) { %>
+            <li> <%= user[i] %> </li>
+        <% } %>
+    </ol>
+
+    <% if(isLogin) { %>
+        <h2> User have logged in. </h2>
+    <% } else { %>
+        <h2> User have not logged in. </h2>
+    <% } %>
+
+
+    <% if(age < 18) { %>
+        <h3> You are minor. </h3>
+    <% } else if(age >= 18 & age < 60) { %>
+        <h3> You are adult. </h3>
+    <% } else { %>
+        <h3> You are senior citizen. </h3>
+    <% } %>
+</body>
+</html>
