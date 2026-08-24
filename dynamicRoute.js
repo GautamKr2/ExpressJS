@@ -9,7 +9,7 @@ app.get('/user', (req, resp) => {
     const users = ['Gautam', 'Amit', 'Sintu', 'Rajeev'];
     let data = `<ul>`;
     for(let i=0; i<users.length; i++) {
-        data += `<li><a href='/user/${users[i]}'> ${users[i]} </a></li>`;
+        data += `<li>This is <b><a href='/user/${users[i]}'> ${users[i]} </a></b>'s profile page.</li>`;
     }
     data += `</ul>`;
     resp.send(`<h1>User Page</h1> ${data}`)
