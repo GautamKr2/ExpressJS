@@ -9,10 +9,11 @@
     <h1>Displaying mongoDB data</h1>
 
     <table border="1" >
-        <tr>
+        <tr style="color: rgb(253, 5, 5);">
             <td> Name </td>
             <td> Age </td>
             <td> Email </td>
+            <td> Operation </td>
         </tr>
 
         <% studentsData.forEach(student => { %>
@@ -20,6 +21,7 @@
                 <td> <%= student.name %> </td>
                 <td> <%= student.age %> </td>
                 <td> <%= student.email %> </td>
+                <td> <a href="/delete/<%= student._id %>"> Delete </a> </td>
             </tr>
         <% }) %>
     </table>
