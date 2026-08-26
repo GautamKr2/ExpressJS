@@ -13,7 +13,8 @@
             <td> Name </td>
             <td> Age </td>
             <td> Email </td>
-            <td> Operation </td>
+            <td> Operation1 </td>
+            <td> Operation2 </td>
         </tr>
 
         <% studentsData.forEach(student => { %>
@@ -22,6 +23,7 @@
                 <td> <%= student.age %> </td>
                 <td> <%= student.email %> </td>
                 <td> <a href="/delete/<%= student._id %>"> Delete </a> </td>
+                <td> <a href="/update/<%= student._id %>"> Update </a> </td>
             </tr>
         <% }) %>
     </table>

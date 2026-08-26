@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new student</title>
+</head>
+<body>
+    <h1> Update your data </h1>
+    <form action="/update/id" method="">
+        <input type="text" placeholder="Enter name" value="<%= stdData.name %>" name="name" /> <br/> <br/>
+        <input type="text" placeholder="Enter email" value="<%= stdData.email %>"  name="email" /> <br/> <br/>
+        <input type="number" placeholder="Enter age" value="<%= stdData.age %>" name="age" /> <br/> <br/>
+        <button> Update user </button>
+    </form>
+</body>
+</html>
