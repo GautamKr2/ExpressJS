@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Update your data </h1>
-    <form action="/update/id" method="">
+    <form action="/ui/update/<%= stdData._id %>" method="post">
         <input type="text" placeholder="Enter name" value="<%= stdData.name %>" name="name" /> <br/> <br/>
         <input type="text" placeholder="Enter email" value="<%= stdData.email %>"  name="email" /> <br/> <br/>
         <input type="number" placeholder="Enter age" value="<%= stdData.age %>" name="age" /> <br/> <br/>
