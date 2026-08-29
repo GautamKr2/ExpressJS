@@ -3,8 +3,6 @@ import multer from 'multer';
 
 const app = express();
 
-// const upload = multer({dest: 'upload'});
-
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'upload')
@@ -14,6 +12,7 @@ const storage = multer.diskStorage({
     }
 })
 
+// const upload = multer({dest: 'upload'});
 const upload = multer({storage});
 
 app.get("/", (req, resp) => {
