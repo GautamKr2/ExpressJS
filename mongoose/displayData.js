@@ -21,21 +21,21 @@ mongoose.connect("mongodb://localhost:27017/college").then(async () => {
 
     app.post("/create", async (req, resp) => {
         let newStd = req.body
-        const result = await dbModel.create(newStd)
-        resp.send({message: "Data inserted", success: true})
+        const result = await dbModel.create(newStd);
+        resp.send({message: "Data inserted", success: true});
     })
 
     app.put("/update/:id", async (req, resp) => {
         let id = req.params.id
-        const result = await dbModel.findByIdAndUpdate(id, req.body )
-        resp.send({message: "Data updated", success:true})
+        const result = await dbModel.findByIdAndUpdate(id, req.body );
+        resp.send({message: "Data updated", success:true});
     })
 
     app.delete("/delete/:id", async (req, resp) => {
         let id = req.params.id
-        const result = await dbModel.findByIdAndDelete(id)
-        resp.send({message: "Data updated", success: true})
+        const result = await dbModel.findByIdAndDelete(id);
+        resp.send({message: "Data updated", success: true});
     })
 })
 
-app.listen(3201)
+app.listen(3201);
